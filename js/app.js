@@ -47,4 +47,22 @@ document.getElementById('calculator').addEventListener('click', function(event){
     }
 })
 
+document.getElementById('verify-pin').addEventListener('click', function(){
+  
+    const displayPinField = document.getElementById('display-pin');
+    const currentPin = displayPinField.value;
+
+
+    const typedNumberField = document.getElementById('typed-numbers');
+    const lastTypedNumber = typedNumberField.value;
+
+    if(lastTypedNumber === currentPin){
+            console.log('correct pin');
+    }
+    else{
+        console.log('incorrect pin');
+    }
+
+})
+
 
